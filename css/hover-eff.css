@@ -1,0 +1,97 @@
+:root {
+  /*colors*/
+  --white: #fff;
+  --bcgd: #E5E5E5;
+  --bggrey:#F6F6F6;
+  --grey: #999999;
+  --darkgrey: #666;
+  --ltblack: #333;
+  --_black: #000;
+
+
+  --purple: #A65CF0;
+  --purple-lt: #C998FB;
+  --purple-dk: #7033AC;
+
+
+  --pink-lt:#F8EFFF;
+
+
+  --oran-lt: #FFBD59;
+  --oran: #FF862F;
+  --oran-dk: #BB370E;
+}
+
+  /*BUTTONS*/
+  /*Solid*/
+
+.btn-solid {
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.btn-solid:focus-visible {
+  background-color: var(--purple-lt);
+}
+
+.btn-solid:hover:not(:focus-visible) {
+  background-color: var(--purple-lt);
+
+}
+
+.btn-solid:active:not(:focus-visible) {
+  background-color: var(--purple-dk);
+  outline: 2px solid var(--purple-dk);
+}
+
+  /*Transparent*/
+
+  .btn-trans {
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .btn-trans:focus-visible {
+    background-color: var(--purple);
+    color: var(--white);
+    outline: 2px solid var(--purple);
+
+  }
+
+  .btn-trans:hover:not(:focus-visible) {
+    background-color: var(--purple-lt);
+    color: var(--white);
+  }
+
+  .btn-trans:active:not(:focus-visible) {
+    background-color: var(--purple-dk);
+    color: var(--white);
+  }
+
+/*top-link-toCat */
+/*top-arr*/
+
+.top-link-toCat {
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.top-link-toCat:focus-visible {
+  color: var(--purple);
+  /*color: var(--white);*/
+}
+
+.top-link-toCat:hover:not(:focus-visible) {
+  color: var(--purple-lt);
+  /*color: var(--white);*/
+  /*outline: 2px solid var(--purple);*/
+}
+
+.top-link-toCat:active:not(:focus-visible) {
+  color: var(--purple-dk);
+
+  /*color: var(--white);*/
+}

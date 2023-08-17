@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDP-RU</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/hover-eff.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container-header-top">
+      <div class="head-top">
+        <address class="address">
+          <span class="region">Ваш регион:</span>
+          <form class="form-head city" action="https://jsonplaceholder.typicode.com/posts">
+            <select name="Ваш город" class="city-select">
+              <option class="head-option" value="Москва"> Москва </option>
+              <option class="head-option" value="Казань"> Казань </option>
+              <option class="head-option" value="Уфа"> Уфа </option>
+              <option class="head-option" value="Пермь"> Пермь </option>
+            </select>
+          </form>
+          <a class="tel" href="tel:+74958854547">+7 (495) 885-45-47</a>
+        </address>
+
+        <ul class="company">
+          <li class="head-top-list"><a href=""> О компании </a></li>
+          <li class="head-top-list"><a href=""> Гарантия возврат </a></li>
+          <li class="head-top-list"><a href=""> Корпоративным клиентам </a></li>
+          <li class="head-top-list"><a href=""> Дизайн решение </a></li>
+        </ul>
+      </div>
+    </div>
+    <!--  -->
+    <div class="container container-header-mid">
+
+      <nav class="nav-panel">
+        <ul class="nav-list">
+          <li class="head-mid-logo">
+            <a class="logo-head" href="#"><img src="img/Logo.svg" alt="logo"></a>
+          </li>
+          <li class="nav_pt">
+            <a href="#" class="nav-pt-link"> Каталог </a>
+          </li>
+
+          <li class="nav_pt">
+            <a href="#" class="nav-pt-link"> Магазины </a>
+          </li>
+
+          <li class="nav_pt">
+            <a href="#" class="nav-pt-link"> Шоу-рум </a>
+          </li>
+
+          <li class="nav_pt">
+            <a href="#" class="nav-pt-link"> Доставка и оплата </a>
+          </li>
+
+          <li class="nav_pt">
+            <a href="#" class="nav-pt-link"> Дисконт </a>
+          </li>
+
+          <li class="nav_pt">
+            <a href="#" class="nav-pt-link"> Контакты </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+    <!--  -->
+    <div class="container container-header-bot">
+      <div class="head-bot">
+        <div class="head-bot-search">
+          <div class="form-block">
+            <form class="form-head select" action="https://jsonplaceholder.typicode.com/posts">
+              <label>
+                <input type="text" class="form-head-text" placeholder="Как вас зовут?">
+              </label>
+            </form>
+            <div class="search-cat">
+              <form class="form-head form-search" action="https://jsonplaceholder.typicode.com/posts">
+                <select name="Категория" class="category-select">
+                  <div class="cat-option">
+                    <option class="cat-opt-pt" value="" disabled selected>Категория</option>
+                    <option class="cat-opt-pt" value="Диваны"> Диваны </option>
+                    <option class="cat-opt-pt" value="Кресла"> Кресла </option>
+                    <option class="cat-opt-pt" value="Пуфы"> Пуфы </option>
+                    <option class="cat-opt-pt" value="Кровати"> Кровати </option>
+                    <option class="cat-opt-pt" value="Тумбы"> Тумбы </option>
+                  </div>
+                  <div class="cat-option">
+                    <option class="cat-opt-pt" value="Комоды"> Комоды </option>
+                    <option class="cat-opt-pt" value="Стулья"> Стулья </option>
+                    <option class="cat-opt-pt" value="Столы"> Столы </option>
+                    <option class="cat-opt-pt" value="Аксессуары"> Аксессуары </option>
+                  </div>
+                </select>
+              </form>
+            </div>
+          </div>
+
+        </div>
+        <div class="head-bot-icon">
+          <a class="head-link hl-client">
+            <img src="img/user.svg" alt="">
+          </a>
+
+          <a class="head-link hl-basket">
+            <img src="img/cart.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main">
+
+    <section class="banner">
+      <h1 class="visually-hidden"></h1>
+      <div class="container container-banner">
+        <div class="bannner-content">
+          <p class="ban-txt"> Скидка 15% <br> на первую покупку </p>
+          <div class="foot-lists ">
+            <button class="btn-solid get">
+              Получить!
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="special section">
+      <div class="container container-special">
+        <div class="heading-block">
+          <h2 class="h2-head">Специальные предложения</h2>
+        </div>
+        <!---->
+        <div class="spec-list">
+          <div class="spec-card">
+            <div class="discont-block">
+              <span class="discont"> - 9 000 </span>
+            </div>
+            <div class="spec-card-main">
+              <img src="img/sp1.png" alt="armchair">
+              <p class="product-descr"> Кресло велюровое <br> "Х-24" </p>
+              <p class="price"> 15 990 руб <span class="instdead-price"> 24 990 руб</span> </p>
+            </div>
+            <div class="btn-buy-cont">
+
+              <button class="btn-trans buy"> Купить </button>
+            </div>
+          </div>
+
+          <div class="spec-card spec-card-mid">
+            <div class="sp-mid-top">
+              <div class="discont-block">
+                <span class="discont"> - 10 000 </span>
+              </div>
+              <div class="sp-img-mid">
+                <img class="sp-mid" src="img/sp2.png" alt="sofa">
+              </div>
+            </div>
+            <div class="spec-card-main">
+
+
+              <p class="product-descr"> Диван тканевый <br>"Z-44" </p>
+              <p class="price"> 22 990 руб <span class="instdead-price"> 32 990 руб </span> </p>
+
+              <img class="sp-mid-open" src="img/sp21.png" alt="sofa-opened">
+            </div>
+            <div class="btn-buy-cont">
+
+              <button class="btn-trans buy"> Купить </button>
+            </div>
+          </div>
+
+          <div class="spec-card sp-c-last">
+            <div class="discont-block discont-block-last">
+              <span class="discont db-last"> - 600 </span>
+            </div>
+            <div class="spec-card-main sp-card-last">
+              <img class="sp-img-end" src="img/sp3.png" alt="clockwork">
+              <p class="product-descr"> Будильник <br>"Quartz-23" </p>
+              <p class="price"> 1 290 руб <span class="instdead-price"> 1 890 руб </span> </p>
+            </div>
+            <div class="btn-buy-cont">
+              <button class="btn-trans btn-buy"> Купить </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highrate section">
+      <div class="container container-hr">
+        <div class="heading-block">
+          <h2 class="h2-head">Высокий рейтинг</h2>
+        </div>
+
+        <div class="hr-list"><!-- -->
+          <!-- Card 1 -->
+          <div class="hr-card">
+            <span class="rating hr-cd-fst"> 5,0 </span>
+            <div class="hr-cd-main">
+              <img class="hr-img" src="img/hr-r94.png" alt="">
+              <p class="hr-descr">
+                Диван кожаный <br> "R-94"
+              </p>
+              <p class="hr-price">
+                94 990 руб
+              </p>
+              <div class="hr-but">
+                <button class="btn-trans btn-buy">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="hr-card">
+            <span class="rating"> 4,9 </span>
+            <div class="hr-cd-main">
+
+              <img class="hr-img" src="img/hr-t75.png" alt="">
+              <p class="hr-descr">
+                Диван апартековый <br> "Т-75"
+              </p>
+              <p class="hr-price">
+                69 990 руб
+              </p>
+
+              <div class="hr-but">
+                <button class="btn-trans btn-buy">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="hr-card">
+            <span class="rating"> 4,8 </span>
+            <div class="hr-cd-main">
+
+              <img class="hr-img" src="img/hr-d31.png" alt="">
+              <p class="hr-descr">
+                Диван тканевый <br> "D-31"
+              </p>
+              <p class="hr-price">
+                28 490 руб
+              </p>
+
+              <div class="hr-but">
+                <button class="btn-trans btn-buy">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="hr-card">
+            <span class="rating"> 4,8 </span>
+            <div class="hr-cd-main">
+
+              <img class="hr-img" src="img/hr-y68.png" alt="">
+              <p class="hr-descr">
+                Диван велюровый <br> "Y-68"
+              </p>
+              <p class="hr-price">
+                22 990 руб
+              </p>
+
+              <div class="hr-but">
+                <button class="btn-trans btn-buy">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="hr-card">
+            <span class="rating"> 4,8 </span>
+            <div class="hr-cd-main">
+
+              <img class="hr-img" src="img/hr-w95.png" alt="">
+              <p class="hr-descr">
+                Диван из шинила <br> "W-95"
+              </p>
+              <p class="hr-price">
+                22 950 руб
+              </p>
+
+              <div class="hr-but">
+                <button class="btn-trans btn-buy">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="hr-card">
+            <span class="rating"> 4,8 </span>
+            <div class="hr-cd-main">
+
+              <img class="hr-img" src="img/hr-g41.png" alt="">
+              <p class="hr-descr">
+                Диван флоковый <br> "G-41"
+              </p>
+              <p class="hr-price">
+                17 990 руб
+              </p>
+
+              <div class="hr-but">
+                <button class="btn-trans btn-buy">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="hr-card hr-card-hide">
+            <span class="rating"> 4,8 </span>
+            <div class="hr-cd-main">
+
+              <img class="hr-img" src="img/hr-v43.png" alt="">
+              <p class="hr-descr">
+                Диван шиниловый <br> "V-43"
+              </p>
+              <p class="hr-price">
+                19 990 руб
+              </p>
+
+              <div class="hr-but">
+                <button class="btn-trans btn-buy">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="hr-card hr-card-hide">
+            <span class="rating"> 4,7 </span>
+            <div class="hr-cd-main">
+
+              <img class="hr-img" src="img/hr-s99.png" alt="">
+              <p class="hr-descr">
+                Диван велровый <br> "S-99"
+              </p>
+              <p class="hr-price">
+                19 990 руб
+              </p>
+
+              <div class="hr-but">
+                <button class="btn-trans btn-buy">
+                  Купить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div><!-- -->
+        <div class="button-more">
+          <button class="btn-solid More"> Смотреть больше товаров</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="acquaint section">
+      <div class="acq-cont">
+        <div class="container container-acq">
+          <div class="acq-text-block">
+            <p class="acq-title">
+              Оксфорд 1950
+            </p>
+            <p class="acq-txt">
+              Новая коллекция <br> изысканных кресел
+            </p>
+          </div>
+          <div>
+            <button class="btn-solid acq-button">
+              Ознакомиться
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="Top section">
+      <div class="container container-top">
+
+        <h2 class="h2-head">Топ категории</h2>
+        <div class="top-cards">
+          <div class="top-up">
+            <div class="top-cd card-up card-up-lt">
+              <ul class="top-list">
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link">
+                    Прямые
+                  </a>
+                </li>
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link">
+                    Угловые
+                  </a>
+                </li>
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link">
+                    Модульные
+                  </a>
+                </li>
+              </ul>
+
+              <h3 class="top-card-head">
+                Диваны
+              </h3>
+
+              <img src="img/top-1.png" alt="" class="type-img">
+              <div class="to-cat-block">
+                <a href="#" class="top-link-toCat">
+                  В каталог
+                  <span class="top-arr">
+                    <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_663_1767)">
+                        <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_663_1767">
+                          <rect width="22" height="22" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </span>
+                </a>
+                <!--<img src="img/arr-rt.svg" alt="">-->
+              </div>
+            </div>
+
+            <div class="top-cd card-up card-up-rt">
+              <ul class="top-list">
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link">
+                    Мягкие
+                  </a>
+                </li>
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link">
+                    Кресла-кровати
+                  </a>
+                </li>
+              </ul>
+
+              <h3 class="top-card-head">
+                Кресла
+              </h3>
+
+              <img src="img/top-2.png" alt="" class="type-img">
+
+              <div class="to-cat-block">
+                <a href="#" class="top-link-toCat">
+                  В каталог
+                  <span class="top-arr">
+                    <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_663_1767)">
+                        <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_663_1767">
+                          <rect width="22" height="22" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="top-dn">
+            <div class="top-cd card-dn">
+              <ul class="top-list">
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link">
+                    Односпальные
+                  </a>
+                </li>
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link">
+                    Двуспальные
+                  </a>
+                </li>
+              </ul>
+
+              <h3 class="top-card-head">
+                Кровати
+              </h3>
+
+              <img src="img/top-3.png" alt="" class="type-img">
+
+              <div class="to-cat-block">
+                <a href="#" class="top-link-toCat">
+                  В каталог
+                  <span class="top-arr">
+                    <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_663_1767)">
+                        <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_663_1767">
+                          <rect width="22" height="22" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="top-cd card-dn">
+              <ul class="top-list">
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link">
+                    Тумбы
+                  </a>
+                </li>
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link">
+                    Комоды
+                  </a>
+                </li>
+              </ul>
+
+              <h3 class="top-card-head">
+                Тумбы и комоды
+              </h3>
+
+              <img src="img/top-4.png" alt="" class="type-img">
+
+              <div class="to-cat-block">
+                <a href="#" class="top-link-toCat">
+                  В каталог
+                  <span class="top-arr">
+                    <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_663_1767)">
+                        <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_663_1767">
+                          <rect width="22" height="22" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="top-cd card-dn">
+              <ul class="top-list">
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link">
+                    Деревянные
+                  </a>
+                </li>
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link">
+                    Металлокаркас
+                  </a>
+                </li>
+              </ul>
+
+              <h3 class="top-card-head">
+                Стулья
+              </h3>
+
+              <img src="img/top-5.png" alt="" class="type-img">
+
+              <div class="to-cat-block">
+                <a href="#" class="top-link-toCat">
+                  В каталог
+                  <span class="top-arr">
+                    <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_663_1767)">
+                        <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_663_1767">
+                          <rect width="22" height="22" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benifits section">
+      <div class="container container-ben">
+
+        <h2 class="h2-head">Полезное</h2>
+
+        <div class="ben-block">
+          <div class="ben-card bc1">
+            <img src="./img/ben-1.png" alt="">
+            <div class="ben-card-bottom">
+              <p class="ben-txt ben-txt1">
+                И&nbsp;нет сомнений, что сделанные на&nbsp;базе
+                интернет-аналитики выводы представляют собой
+                не&nbsp;что иное?
+              </p>
+              <div>
+                <button class="btn-trans ben-button">
+                  Читать
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="ben-card bc2">
+            <img src="./img/ben-2.png" alt="">
+
+            <div class="ben-card-bottom">
+              <p class="ben-txt ben-txt2">
+                Как принято считать, некоторые
+                особенности приносят несомненную пользу обществу?
+              </p>
+              <button class="btn-trans ben-button">
+                Читать
+              </button>
+            </div>
+          </div>
+          <div class="ben-card bc3">
+            <img src="./img/ben-3.png" alt="">
+            <div class="ben-card-bottom">
+              <p class="ben-txt ben-txt3">
+                Ясность нашей позиции очевидна: укрепление
+                и&nbsp;развитие внутренней структуры?
+              </p>
+              <div>
+                <button class="btn-trans ben-button">
+                  Читать
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback section">
+      <div class="container container-feed">
+
+        <h2 class="h2-head head-last">Мы всегда вам рады!</h2>
+        <div class="feedback-block">
+
+          <div class="feed-block feed-lt">
+            <p class="feed-txt">Безусловно, новая модель организационной
+              деятельности в&nbsp;значительной степени
+              обусловливает важность распределения внутренних резервов
+              и&nbsp;ресурсов. <span class="inf"> <img src="img/inf.svg" alt=""></span>
+            </p>
+            <form class="form-feed" action="https://jsonplaceholder.typicode.com/posts">
+              <label>
+                <input type="text" class="input-wind" placeholder="Как вас зовут?" required>
+              </label>
+              <label>
+                <input type="tel" class="input-wind" placeholder="Ваш телефон" required> <!--required-->
+              </label>
+              <label>
+                <input type="email" class="input-wind" placeholder="Ваш е-mail" required> <!--required-->
+              </label>
+            </form>
+            <div>
+              <div class="submit-block">
+                <button class="btn-solid btn-send">
+                  Отправить
+                </button>
+                <label class="application-checkbox" for="app_checkbox">
+                  <input type="checkbox" name="acception" class="checkbox" id="app_checkbox" required>
+                  <span class="submit-txt">Принимаю <a href="#" class="feed-link"> пользовательское соглашение
+                    </a></span>
+                </label>
+                <span class="submit-line"></span>
+              </div>
+            </div>
+          </div>
+          <div class="feed-block feed-rt">
+            <img src="img/feed.png" alt="We are always glad to see you">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-bl">
+      <div class="container container-foot">
+        <div class="foot-lists media">
+          <a href="#"><img src="img/Logo.svg" alt=""></a>
+
+          <ul class="social-media">
+            <li><a class="soc-link soc-fb" href="https://www.facebook.com/"></a></li>
+            <li><a class="soc-link soc-vk" href="https://vk.com/"></a></li>
+            <li><a class="soc-link soc-inst" href="https://www.instagram.com/"></a></li>
+          </ul>
+        </div>
+        <div class="foot-lists ">
+          <ul class="foot-descr">
+            <h4 class="foot-heading">О нас</h4>
+
+            <li class="foot-link"><a href="#">О компании</a></li>
+            <li class="foot-link"><a href="#">Блог</a></li>
+          </ul>
+        </div>
+        <div class="foot-lists ">
+          <ul class="foot-descr">
+            <h4 class="foot-heading">Услуги</h4>
+            <li class="foot-link"><a href="#">Доставка</a></li>
+            <li class="foot-link"><a href="#">Рассрочка и кредит</a></li>
+            <li class="foot-link"><a href="#">Сборка и установка</a></li>
+          </ul>
+        </div>
+        <div class="foot-lists ">
+          <ul class="foot-descr">
+            <h4 class="foot-heading">Связь с нами</h4>
+            <li class="foot-link"><a href="#">Обратная связь</a></li>
+            <li class="foot-link"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="foot-lists ">
+          <ul class="foot-descr">
+            <h4 class="foot-heading">Сотрудничество</h4>
+            <li class="foot-link"><a href="#">Поставщикам</a></li>
+            <li class="foot-link"><a href="#">Оптовикам</a></li>
+            <li class="foot-link"><a href="#">Карьера</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-sig-bl">
+      <p class="footer-signature">SDP® 2011-2023</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

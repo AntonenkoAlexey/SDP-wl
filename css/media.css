@@ -1,0 +1,119 @@
+@media(max-width: 1921px) {
+
+
+}
+
+@media(max-width: 1305px) {
+  .sp-mid-open{
+    visibility: hidden;
+  }
+
+  .sp-mid-top{
+    flex-direction: column;
+  }
+
+  .sp-img-mid{
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-right: 0;
+  }
+
+
+  .spec-card-main{
+    padding-right: 41px;
+  }
+
+
+  .btn-buy-cont{
+    justify-self: flex-end;
+  }
+
+  .hr-card{
+    width: calc((100% - (32px*2)) / 3);
+
+  }
+
+  .hr-card:not(:nth-child(3n)){
+    margin-right: var(--gap32);
+  }
+
+  .hr-card:nth-child(3n){
+    margin-right: 0;
+  }
+
+  .hr-card-hide{
+  display: none;
+
+  }
+}
+
+
+
+@media(max-width: 1025px) {
+  .container {
+    max-width: 952px;
+  }
+
+  .spec-card-mid{
+    width: calc((100%-(32px*2))/3);
+  }
+
+  .sp-mid{
+    max-width: 254px;
+  }
+
+
+  .top-up{
+    justify-content: space-between;
+    gap: var(--gap32);
+  }
+
+  .card-up-lt{
+    width: calc((100% - 32px) / 3* 2 + 10px);
+
+  }
+
+  .card-up-rt{
+    width: calc(((100% - 32px) / 3) );
+    max-width: 296px;
+
+  }
+
+
+
+  .bc3{
+    display: block;
+  }
+
+  .ben-txt{
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+@media(max-width: 769px) {
+
+
+}
+
+
+
+
+
+
+@media(max-width: 541px) {
+
+
+}
+
+
+
+
+@media(max-width: 321px) {
+
+
+}
