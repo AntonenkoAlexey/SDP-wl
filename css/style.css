@@ -192,11 +192,17 @@ html {
     color: var(--oran);
     justify-content: flex-start;
    /* margin-right: 11.4%;*/
-   background-image: url(../img/call.svg);
-   background-repeat: no-repeat;
+   /*background-image: url(../img/call.svg);
+   background-repeat: no-repeat;*/
    padding-left: 22px;
 
    font-style: normal;
+  }
+
+  .tel-num{
+    display: flex;
+    flex-direction: row;
+
   }
 
   .region{
@@ -947,8 +953,18 @@ html {
     line-height: normal;
   }
 
+  /*  .application-checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-
+  .submit-txt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+*/
 
   /*Footer*/
 
@@ -1027,12 +1043,13 @@ html {
     display: block;
   }
 
+
   .soc-fb{
     width: 30px;
     height: 30px;
-    background-image: url("../img/fb.svg");
+    /*background-image: url("../img/fb.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;*/
     margin-right: 20px;
   }
 
@@ -1040,9 +1057,9 @@ html {
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url("../img/vk.svg");
+    /*background-image: url("../img/vk.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;*/
     margin-right: 20px;
   }
 
@@ -1050,9 +1067,9 @@ html {
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url("../img/inst.svg");
+    /*background-image: url("../img/inst.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;*/
   }
 
 
