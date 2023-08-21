@@ -491,6 +491,10 @@ html {
     width: calc(100%-(32px*2))/3;
     background-color: var(--bggrey);
     border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .spec-card:not(:last-child){
@@ -498,7 +502,7 @@ html {
   }
 
   .spec-card-mid{
-    width: calc(((100%-(32px*2))/1.5)+32px);
+    width: calc(((100%-((32px)*2))/1.5)+32px);
     padding-right: 0;
   }
 
@@ -776,6 +780,10 @@ html {
   }
 
   .top-cd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     background-color: var(--bggrey);
     border-radius: 10px;
 
@@ -837,6 +845,7 @@ html {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: space-between;
+
   }
 
   .ben-card:not(:last-child){
@@ -847,8 +856,10 @@ html {
     padding-top: var(--gap30);
     padding-left: var(--gap30);
     padding-right: 27px;
+  }
 
-
+  .ben-btn-block{
+    padding-left: var(--gap30);
   }
 
   .ben-txt{
@@ -1070,6 +1081,10 @@ html {
     /*background-image: url("../img/inst.svg");
     background-repeat: no-repeat;
     background-size: contain;*/
+  }
+
+  .footer-descr{
+    visibility: visible;
   }
 
 
