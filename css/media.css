@@ -1,12 +1,36 @@
 @media(max-width: 1921px) {
 
-
 }
 
+
 @media(max-width: 1305px) {
+
+  .container {
+    max-width: 952px;
+  }
+
+  .head-top{
+    flex-direction: column;
+  }
+
+  .adress{
+
+    max-width: 952px;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 18px;
+  }
+
+  .company{
+    max-width: 952px;
+    width: 100%;
+  }
+
   .sp-mid-open{
     visibility: hidden;
   }
+
+
 
   .sp-mid-top{
     flex-direction: column;
@@ -18,11 +42,13 @@
     margin-right: 0;
   }
 
-
   .spec-card-main{
     padding-right: 41px;
   }
 
+  .spec-card{
+    width: calc((100% - ((32px)*2))/3);
+  }
 
   .btn-buy-cont{
     justify-self: flex-end;
@@ -30,7 +56,6 @@
 
   .hr-card{
     width: calc((100% - ((32px)*2)) / 3);
-
   }
 
   .hr-card:not(:nth-child(3n)){
@@ -43,16 +68,27 @@
 
   .hr-card-hide{
   display: none;
-
   }
 }
 
 
-
 @media(max-width: 1025px) {
+/*
+  .adress{
+    min-width: 952px;
+
+  }*/
+
   .container {
     max-width: 952px;
+
   }
+/*
+  .company{
+    max-width: 952px;
+    width: 100%;
+  }
+
 
   .spec-list{
     justify-content: space-between;
@@ -82,7 +118,6 @@
 
   .card-up-lt{
     width: calc((100% - (32px)) / 3* 2 + 10px);
-
   }
 
   .card-up-rt{
@@ -106,6 +141,12 @@
   .media{
     margin-right: 0;
   }
+
+  .footer-descr{
+    width: 80%;
+  }*/
+
+
 }
 
 
@@ -113,22 +154,65 @@
 
 
 
+/*
+@media(max-width: 952px) {
+
+  .header{
+    max-width: 768px;
+  }
+
+}
+
+
+@media(max-width: 930px) {
+
+  .bc3{
+    display: none;
+  }
+
+  .spec-list{
+    max-width: ;
+  }
+
+  .sp-c-last{
+    display: none;
+  }
+
+  .spec-card{
+    width: calc((100%-32px)/2);
+  }
+
+  .spec-card-mid{
+    width: calc((100%-32px)/2);
+  }
+}
+
+
+@media(max-width: 853px) {
+.hr-card{
+  width: calc((100% - 32px) / 2);
+
+}
+
+.hr-card:not(:nth-child(2n)){
+  margin-right: var(--gap32);
+}
+
+.hr-card:nth-child(2n){
+  margin-right: 0;
+}
+}
+*/
+
 @media(max-width: 769px) {
+
+  .container{
+
+  }
+
+  /*
   .nav-panel{
     visibility: hidden;
-  }
-
-  .hr-card{
-    width: calc((100% - 32px) / 2);
-
-  }
-
-  .hr-card:not(:nth-child(2n)){
-    margin-right: var(--gap32);
-  }
-
-  .hr-card:nth-child(2n){
-    margin-right: 0;
   }
 
 
@@ -156,22 +240,20 @@
     flex-direction: row;
   }
 
+  .bc1{
+    width: 100%;
+  }*/
 }
 
-
-
-
-
-
+/*
 @media(max-width: 541px) {
 
 
 }
 
 
-
-
 @media(max-width: 321px) {
 
 
 }
+*/
