@@ -16,18 +16,20 @@
 <body>
 
   <header class="header">
-    <div class="container-header-top">
+    <div class="container container-header-top">
       <div class="head-top">
-        <address class="address">
-          <span class="region">Ваш регион:</span>
-          <form class="form-head city" action="https://jsonplaceholder.typicode.com/posts">
-            <select name="Ваш город" class="city-select">
-              <option class="head-option" value="Москва"> Москва </option>
-              <option class="head-option" value="Казань"> Казань </option>
-              <option class="head-option" value="Уфа"> Уфа </option>
-              <option class="head-option" value="Пермь"> Пермь </option>
-            </select>
-          </form>
+        <address class="adress">
+          <div class="reg-block">
+            <span class="region">Ваш регион:</span>
+            <form class="form-head city" action="https://jsonplaceholder.typicode.com/posts">
+              <select name="Ваш город" class="city-select">
+                <option class="head-option" value="Москва"> Москва </option>
+                <option class="head-option" value="Казань"> Казань </option>
+                <option class="head-option" value="Уфа"> Уфа </option>
+                <option class="head-option" value="Пермь"> Пермь </option>
+              </select>
+            </form>
+          </div>
           <a class="tel" href="tel:+74958854547">
             <div class="tel-num">
               <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,10 +48,10 @@
         </address>
 
         <ul class="company">
-          <li class="head-top-list"><a class="link-pt-top" href=""> О компании </a></li>
-          <li class="head-top-list"><a class="link-pt-top" href=""> Гарантия возврат </a></li>
-          <li class="head-top-list"><a class="link-pt-top" href=""> Корпоративным клиентам </a></li>
-          <li class="head-top-list"><a class="link-pt-top" href=""> Дизайн решение </a></li>
+          <li class="head-top-list"><a class="link-pt-top" href="#"> О компании </a></li>
+          <li class="head-top-list"><a class="link-pt-top" href="#"> Гарантия возврат </a></li>
+          <li class="head-top-list"><a class="link-pt-top" href="#"> Корпоративным клиентам </a></li>
+          <li class="head-top-list"><a class="link-pt-top" href="#"> Дизайн решение </a></li>
         </ul>
       </div>
     </div>
@@ -197,12 +199,17 @@
       <div class="container container-banner">
         <div class="bannner-content">
           <p class="ban-txt"> Скидка 15% <br> на первую покупку </p>
-          <div class="foot-lists ">
-            <button class="btn-solid get">
+          <div class=""> <!--class="foot-lists "-->
+            <button class="btn-solid get head-get-320">
               Получить!
             </button>
           </div>
         </div>
+      </div>
+      <div class="head-get hide"> <!--class="foot-lists "-->
+        <button class="btn-solid get">
+          Получить!
+        </button>
       </div>
     </section>
 
@@ -287,7 +294,7 @@
                 94 990 руб
               </p>
               <div class="hr-but">
-                <button class="btn-trans btn-buy">
+                <button class="btn-trans btn-buy hr-buy">
                   Купить
                 </button>
               </div>
@@ -308,7 +315,7 @@
               </p>
 
               <div class="hr-but">
-                <button class="btn-trans btn-buy">
+                <button class="btn-trans btn-buy hr-buy">
                   Купить
                 </button>
               </div>
@@ -329,7 +336,7 @@
               </p>
 
               <div class="hr-but">
-                <button class="btn-trans btn-buy">
+                <button class="btn-trans btn-buy hr-buy">
                   Купить
                 </button>
               </div>
@@ -350,7 +357,7 @@
               </p>
 
               <div class="hr-but">
-                <button class="btn-trans btn-buy">
+                <button class="btn-trans btn-buy hr-buy">
                   Купить
                 </button>
               </div>
@@ -371,7 +378,7 @@
               </p>
 
               <div class="hr-but">
-                <button class="btn-trans btn-buy">
+                <button class="btn-trans btn-buy hr-buy">
                   Купить
                 </button>
               </div>
@@ -392,7 +399,7 @@
               </p>
 
               <div class="hr-but">
-                <button class="btn-trans btn-buy">
+                <button class="btn-trans btn-buy hr-buy">
                   Купить
                 </button>
               </div>
@@ -413,7 +420,7 @@
               </p>
 
               <div class="hr-but">
-                <button class="btn-trans btn-buy">
+                <button class="btn-trans btn-buy hr-buy">
                   Купить
                 </button>
               </div>
@@ -434,7 +441,7 @@
               </p>
 
               <div class="hr-but">
-                <button class="btn-trans btn-buy">
+                <button class="btn-trans btn-buy hr-buy">
                   Купить
                 </button>
               </div>
@@ -458,14 +465,19 @@
               Новая коллекция <br> изысканных кресел
             </p>
           </div>
-          <div>
-            <button class="btn-solid acq-button">
+          <div class="acq-nobcg">
+            <button class="btn-solid acq-button acq-btn-320">
               Ознакомиться
             </button>
           </div>
         </div>
-      </div>
 
+      </div>
+      <div class="acq-nobcg hide">
+        <button class="btn-solid acq-button">
+          Ознакомиться
+        </button>
+      </div>
     </section>
 
     <section class="Top section">
@@ -473,241 +485,248 @@
 
         <h2 class="h2-head">Топ категории</h2>
         <div class="top-cards">
-          <div class="top-up">
-            <div class="top-cd card-up card-up-lt">
+          <!-- <div class="top-up">
 
-              <div>
-                <ul class="top-list">
-                  <li class="top-listel">
-                    <a href="#" class="top-listel-link link-pt">
-                      Прямые
-                    </a>
-                  </li>
-                  <li class="top-listel">
-                    <a href="#" class="top-listel-link link-pt">
-                      Угловые
-                    </a>
-                  </li>
-                  <li class="top-listel">
-                    <a href="#" class="top-listel-link link-pt">
-                      Модульные
-                    </a>
-                  </li>
-                </ul>
-                <h3 class="top-card-head">
-                  Диваны
-                </h3>
-                <img src="img/top-1.png" alt="" class="type-img">
-              </div>
-              <div>
-                <div class="to-cat-block">
-                  <a href="#" class="top-link-toCat">
-                    <span class="to-cat-txt">В каталог</span>
-                    <span class="top-arr">
-                      <svg class="top-arr-svg" width="22" height="22" viewbox="0 0 22 22" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_663_1767)">
-                          <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
-                        </g>
-                        <defs>
-                          <clippath id="clip0_663_1767">
-                            <rect width="22" height="22" fill="white" />
-                          </clippath>
-                        </defs>
-                      </svg>
-                    </span>
+          </div>-->
+
+          <div class="top-cd card-up card-up-lt">
+
+            <div>
+              <ul class="top-list top-list-lt">
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link link-pt">
+                    Прямые
                   </a>
-                  <!--<img src="img/arr-rt.svg" alt="">-->
-                </div>
-              </div>
+                </li>
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link link-pt">
+                    Угловые
+                  </a>
+                </li>
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link link-pt">
+                    Модульные
+                  </a>
+                </li>
+              </ul>
+              <h3 class="top-card-head">
+                Диваны
+              </h3>
+              <img src="img/top-1.png" alt="" class="type-img">
             </div>
-
-            <div class="top-cd card-up card-up-rt">
-              <div>
-                <ul class="top-list">
-                  <li class="top-listel">
-                    <a href="#" class="top-listel-link link-pt">
-                      Мягкие
-                    </a>
-                  </li>
-                  <li class="top-listel">
-                    <a href="#" class="top-listel-link link-pt">
-                      Кресла-кровати
-                    </a>
-                  </li>
-                </ul>
-
-                <h3 class="top-card-head">
-                  Кресла
-                </h3>
-
-                <img src="img/top-2.png" alt="" class="type-img">
-              </div>
-              <div>
-                <div class="to-cat-block">
-                  <a href="#" class="top-link-toCat">
-                    <span class="to-cat-txt">В каталог</span>
-                    <span class="top-arr">
-                      <svg class="top-arr-svg" width="22" height="22" viewbox="0 0 22 22" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_663_1768)">
-                          <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
-                        </g>
-                        <defs>
-                          <clippath id="clip0_663_1768">
-                            <rect width="22" height="22" fill="white" />
-                          </clippath>
-                        </defs>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
+            <div>
+              <div class="to-cat-block">
+                <a href="#" class="top-link-toCat">
+                  <span class="to-cat-txt">В каталог</span>
+                  <span class="top-arr">
+                    <svg class="top-arr-svg" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_663_1767)">
+                        <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_663_1767">
+                          <rect width="22" height="22" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </span>
+                </a>
+                <!--<img src="img/arr-rt.svg" alt="">-->
               </div>
             </div>
           </div>
 
-          <div class="top-dn">
-            <div class="top-cd card-dn">
-
-              <div>
-                <ul class="top-list">
-                  <li class="top-listel">
-                    <a href="#" class="top-listel-link link-pt">
-                      Односпальные
-                    </a>
-                  </li>
-                  <li class="top-listel">
-                    <a href="#" class="top-listel-link link-pt">
-                      Двуспальные
-                    </a>
-                  </li>
-                </ul>
-
-                <h3 class="top-card-head">
-                  Кровати
-                </h3>
-
-                <img src="img/top-3.png" alt="" class="type-img">
-              </div>
-              <div>
-                <div class="to-cat-block">
-                  <a href="#" class="top-link-toCat">
-                    <span class="to-cat-txt">В каталог</span>
-                    <span class="top-arr">
-                      <svg class="top-arr-svg" width="22" height="22" viewbox="0 0 22 22" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_663_1769)">
-                          <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
-                        </g>
-                        <defs>
-                          <clippath id="clip0_663_1769">
-                            <rect width="22" height="22" fill="white" />
-                          </clippath>
-                        </defs>
-                      </svg>
-                    </span>
+          <div class="top-cd card-up card-up-rt">
+            <div>
+              <ul class="top-list">
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link link-pt">
+                    Мягкие
                   </a>
-                </div>
-              </div>
+                </li>
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link link-pt">
+                    Кресла-кровати
+                  </a>
+                </li>
+              </ul>
 
+              <h3 class="top-card-head">
+                Кресла
+              </h3>
+
+              <img src="img/top-2.png" alt="" class="type-img">
             </div>
-
-            <div class="top-cd card-dn">
-              <div>
-
-                <ul class="top-list">
-                  <li class="top-listel">
-                    <a href="#" class="top-listel-link link-pt">
-                      Тумбы
-                    </a>
-                  </li>
-                  <li class="top-listel">
-                    <a href="#" class="top-listel-link link-pt">
-                      Комоды
-                    </a>
-                  </li>
-                </ul>
-
-                <h3 class="top-card-head">
-                  Тумбы и комоды
-                </h3>
-
-                <img src="img/top-4.png" alt="" class="type-img">
-              </div>
-              <div>
-                <div class="to-cat-block">
-                  <a href="#" class="top-link-toCat">
-                    <span class="to-cat-txt">В каталог</span>
-                    <span class="top-arr">
-                      <svg class="top-arr-svg" width="22" height="22" viewbox="0 0 22 22" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_663_1770)">
-                          <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
-                        </g>
-                        <defs>
-                          <clippath id="clip0_663_1770">
-                            <rect width="22" height="22" fill="white" />
-                          </clippath>
-                        </defs>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="top-cd card-dn">
-              <div>
-                <ul class="top-list">
-                  <li class="top-listel">
-                    <a href="#" class="top-listel-link link-pt">
-                      Деревянные
-                    </a>
-                  </li>
-                  <li class="top-listel">
-                    <a href="#" class="top-listel-link link-pt">
-                      Металлокаркас
-                    </a>
-                  </li>
-                </ul>
-
-                <h3 class="top-card-head">
-                  Стулья
-                </h3>
-
-                <img src="img/top-5.png" alt="" class="type-img">
-              </div>
-              <div>
-                <div class="to-cat-block">
-                  <a href="#" class="top-link-toCat">
-                    <span class="to-cat-txt">В каталог</span>
-                    <span class="top-arr">
-                      <svg class="top-arr-svg" width="22" height="22" viewbox="0 0 22 22" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_663_1771)">
-                          <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
-                        </g>
-                        <defs>
-                          <clippath id="clip0_663_1771">
-                            <rect width="22" height="22" fill="white" />
-                          </clippath>
-                        </defs>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
+            <div>
+              <div class="to-cat-block">
+                <a href="#" class="top-link-toCat">
+                  <span class="to-cat-txt">В каталог</span>
+                  <span class="top-arr">
+                    <svg class="top-arr-svg" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_663_1768)">
+                        <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_663_1768">
+                          <rect width="22" height="22" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </span>
+                </a>
               </div>
             </div>
           </div>
+
+
+          <!--<div class="top-dn">
+
+          </div>-->
+
+
+          <div class="top-cd card-dn">
+            <div>
+              <ul class="top-list">
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link link-pt">
+                    Односпальные
+                  </a>
+                </li>
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link link-pt">
+                    Двуспальные
+                  </a>
+                </li>
+              </ul>
+
+              <h3 class="top-card-head">
+                Кровати
+              </h3>
+
+              <img src="img/top-3.png" alt="" class="type-img">
+            </div>
+            <div>
+              <div class="to-cat-block">
+                <a href="#" class="top-link-toCat">
+                  <span class="to-cat-txt">В каталог</span>
+                  <span class="top-arr">
+                    <svg class="top-arr-svg" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_663_1769)">
+                        <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_663_1769">
+                          <rect width="22" height="22" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="top-cd card-dn">
+            <div>
+
+              <ul class="top-list">
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link link-pt">
+                    Тумбы
+                  </a>
+                </li>
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link link-pt">
+                    Комоды
+                  </a>
+                </li>
+              </ul>
+
+              <h3 class="top-card-head">
+                Тумбы и комоды
+              </h3>
+
+              <img src="img/top-4.png" alt="" class="type-img">
+            </div>
+            <div>
+              <div class="to-cat-block">
+                <a href="#" class="top-link-toCat">
+                  <span class="to-cat-txt">В каталог</span>
+                  <span class="top-arr">
+                    <svg class="top-arr-svg" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_663_1770)">
+                        <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_663_1770">
+                          <rect width="22" height="22" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="top-cd card-dn">
+            <div>
+              <ul class="top-list">
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link link-pt">
+                    Деревянные
+                  </a>
+                </li>
+                <li class="top-listel">
+                  <a href="#" class="top-listel-link link-pt">
+                    Металлокаркас
+                  </a>
+                </li>
+              </ul>
+
+              <h3 class="top-card-head">
+                Стулья
+              </h3>
+
+              <img src="img/top-5.png" alt="" class="type-img">
+            </div>
+            <div>
+              <div class="to-cat-block">
+                <a href="#" class="top-link-toCat">
+                  <span class="to-cat-txt">В каталог</span>
+                  <span class="top-arr">
+                    <svg class="top-arr-svg" width="22" height="22" viewbox="0 0 22 22" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_663_1771)">
+                        <path d="M11 9L14 12L11 15" stroke="#A65CF0" stroke-width="1" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <circle cx="12" cy="12" r="9" stroke="#A65CF0" stroke-width="1" />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_663_1771">
+                          <rect width="22" height="22" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </section>
@@ -841,7 +860,7 @@
             </div>
           </div>
           <div class="feed-block feed-rt">
-            <img src="img/feed.png" alt="We are always glad to see you">
+            <img class="feed-img" src="img/feed.png" alt="We are always glad to see you">
           </div>
         </div>
       </div>
@@ -853,7 +872,7 @@
     <div class="footer-bl">
       <div class="container container-foot">
         <div class="media">
-          <a href="#"><img src="img/Logo.svg" alt=""></a>
+          <a class="foot-logo" href="#"> </a> <!-- <img class="foot-logo" src="img/Logo.svg" alt="">-->
 
           <ul class="social-media">
             <li><a class="soc-link soc-fb" href="https://www.facebook.com/">
