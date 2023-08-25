@@ -164,6 +164,10 @@ html {
     justify-content: center;
   }
 
+  .logo-320{
+    display: none;
+  }
+
   .link-pt-top{
     color: var(--grey);
   }
@@ -441,18 +445,18 @@ html {
 
     /*banner*/
 
-  .banner{
+  .banner-bg{
     background-image: url(../img/Banner-1.png);
     background-repeat: no-repeat;
     background-size:cover;
+    margin-bottom: 32px;
   }
+
   .container-banner{
     height: 100%;
     margin: 0 auto;
-
     align-items: start;
     justify-content: center;
-
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -473,14 +477,16 @@ html {
 
   }
 
-
-
-
   .btn-buy-cont{
     padding-left: var(--gap30);
     margin-bottom: var(--gap30);
   }
 
+  .h2-head {
+
+    font-size: 24px;
+    line-height: 24px;
+  }
 
   .spec-list{
     display: flex;
@@ -600,8 +606,8 @@ html {
 
 
 
-
   /*High rating*/
+
 
   .container-hr{
     display: flex;
@@ -837,6 +843,10 @@ html {
     height: 21px;
   }
 
+  .arr-320{
+    display: none;
+  }
+
 
 
   /*Benifits*/
@@ -979,20 +989,9 @@ html {
     line-height: normal;
   }
 
-  /*  .application-checkbox{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .submit-txt{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-*/
 
   /*Footer*/
+
 
   .foot-descr,
   .foot-heading{

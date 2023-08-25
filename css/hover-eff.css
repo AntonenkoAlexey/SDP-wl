@@ -23,8 +23,10 @@
   --oran-dk: #BB370E;
 }
 
+
   /*BUTTONS*/
   /*Solid*/
+
 
 .btn-solid {
   transition-property: background-color;
@@ -46,7 +48,9 @@
   outline: 2px solid var(--purple-dk);
 }
 
+
   /*Transparent*/
+
 
   .btn-trans {
     transition-property: background-color;
@@ -71,7 +75,9 @@
     color: var(--white);
   }
 
+
   /*Nav*/
+
 
   .link-pt-top{
     transition-property: color;
@@ -97,7 +103,9 @@
   }
 
 
+
   /*NAV-SVG*/
+
 
   .user-svg {
     transition-property: fill;
@@ -117,14 +125,9 @@
     fill: var(--purple-dk);
   }
 
-
   .head-link:focus-visible {
     background-color: var(--purple-lt);
   }
-
-
-
-
 
 
 /*top-link-toCat */
@@ -148,6 +151,7 @@
 .top-link-toCat:active:not(:focus-visible) {
   color: var(--purple-dk);
 }
+
 
 /*bord-bot-to-cat*/
 
@@ -203,8 +207,8 @@
 }
 
 
-
 /*tel*/
+
 
 .tel-svg {
   transition-property: fill;
@@ -224,9 +228,6 @@
 .tel-svg:active:not(:focus-visible) {
   fill: var(--oran-dk);
 }
-
-
-
 
 .tel-num {
 
@@ -249,25 +250,8 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Social media*/
+
 
 .soc-link-col {
   transition-property: fill;
@@ -289,8 +273,8 @@
 }
 
 
-
 /*links*/
+
 
 .link-pt{
   transition-property: color;

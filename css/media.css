@@ -292,11 +292,47 @@
     max-width: 296px;
   }
 
+  .head-mid-logo{
+    display: none;
+  }
+
+  .logo-320{
+    width: 100%;
+    background-color: var(--bggrey);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+
+
+  .adress{
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 0;
+  }
+
+  .tel{
+    padding-left: 0;
+    padding-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .head-top{
+    padding: 0;
+  }
+
+  .nav-panel {
+    padding: 0;
+  }
+
+  .company{
+    display: none;
+  }
 
   .container-banner {
     padding-top: 30px;
     padding-bottom: 0;
-}
+  }
 
   .ban-txt {
     padding-bottom: 125px;
@@ -389,16 +425,10 @@
     justify-content: center;
   }
 
-
   .top-card-head {
     padding-left: 16px;
     margin-bottom: 16px;
   }
-
-
-
-
-
 
   .card-up-rt {
     width: calc(((100% - (16px)) / 2) );
@@ -417,14 +447,18 @@
     padding-bottom: 16px;
   }
 
-
   .top-list {
     padding-left: 16px;
+    margin-bottom: 4px;
     flex-direction: column;
   }
 
   .top-list-lt{
     flex-direction: row;
+  }
+
+  .top-card-head {
+    font-size: 16px;
   }
 
   .to-cat-txt{
@@ -436,8 +470,76 @@
     padding-left: 16px;
   }
 
+  .h3-block{
+    display: flex;
+    /*width: 100%;*/
+    flex-direction: row;
+  }
 
+  .arr-320{
+    display: inline-block;
+  }
 
+  .arr-pos{
+    display: none;
+  }
+
+  .ben-card{
+    width: 100%;
+  }
+
+  .bc2{
+    display: none;
+  }
+
+  .feed-lt{
+    width: 100%;
+  }
+
+  .submit-txt, .feed-link {
+    font-size: 12px;
+    line-height: normal;
+
+  }
+
+  .feed-rt{
+    display: none;
+  }
+
+  .media{
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+
+  .foot-logo{
+    display: block;
+    margin-bottom: 29px;
+  }
+
+  .footer-descr{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .foot-lists:not(:nth-child(2n)){
+    margin-right: 50px;
+
+  }
+
+  .foot-lists:nth-child(2n){
+    margin-right: 0;
+
+  }
+
+  .fl-pad{
+    padding-right: 12px;
+    padding-bottom: 24px;
+  }
+
+  .link-pt{
+    font-size: 12px;
+  }
 
 }
 
