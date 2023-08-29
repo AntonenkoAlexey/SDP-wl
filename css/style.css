@@ -297,6 +297,18 @@ html {
     color: var(--ltblack);
   }
 
+  .icon-768{
+    display: none;
+  }
+
+  .btn-reset{
+    display: none;
+  }
+
+  .hml-768{
+    display: none;
+  }
+
   /*end*/
 
   .head-bot{

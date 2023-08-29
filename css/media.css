@@ -22,6 +22,7 @@
   --width-plus: calc(60% + 1px);
 
 }
+
 /*для 1920*/
 @media(max-width: 1921px) {
 
@@ -41,6 +42,11 @@
   .head-top{
     flex-direction: column;
     background-color: var(--white);
+  }
+
+  .sp-mid-top {
+
+    margin-bottom: 32px;
   }
 
   .city-select{
@@ -161,6 +167,54 @@
 /*для 768*/
 @media(max-width: 975px) {
 
+
+  /*burger-section*/
+  .burger {
+    display: block;
+    background-color: inherit;
+    border: none;
+    position: relative;
+    width: 30px;
+    height: 23px;
+    justify-content: space-between;
+
+  }
+
+  .burger-line {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: var(--purple);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .burger-line:nth-child(1) {
+    top: 3px;
+  }
+
+  .burger-line:nth-child(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .burger-line:nth-child(3) {
+    bottom: 3px;
+  }
+
+  .btn-reset{
+    display: block;
+  }
+  /*burger-section*/
+
+  .hml-768{
+    display: block;
+  }
+
+
+
+
+
   .container {
     max-width: 624px;
   }
@@ -169,11 +223,25 @@
     display: none;
   }
 
-  /*.container-header-top {
-    max-width: 624px;
-  }*/
+  .container-header-mid {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--gap32);
+    margin-bottom: var(--gap32);
+  }
 
+  .icon-768{
+    display: flex;
+  }
 
+  .icon-768-hide{
+    display: none;
+  }
+
+  .head-bot-search{
+    width: 100%;
+  }
 
   .spec-list{
     justify-content: space-between;
@@ -195,7 +263,6 @@
     display: none;
 
   }
-
 
 
 
@@ -328,6 +395,12 @@
   .company{
     display: none;
   }
+
+  .container-header-mid {
+    padding-top: 0;
+  }
+
+
 
   .container-banner {
     padding-top: 30px;
