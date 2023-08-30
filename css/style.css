@@ -227,16 +227,15 @@ html {
     font-style: normal;
   }
 
+  .select{
+    width: 100%;
+  }
+
   .city-select{
     border: none;
     color: var(--purple);
-   /* max-width: 80px;*/
     background-color: var(--bggrey);
   }
-
-  /*.head-top-list:not(:last-child){
-    margin-right: 64px;
-  }*/
 
   .company{
     list-style: none;
@@ -328,34 +327,41 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--bggrey);
+    /*background-color: var(--bggrey);*/
     border: 0;
     border-radius: 10px;
-    outline: 2px solid var(--bggrey);
+    /*outline: 2px solid var(--bggrey);*/
   }
 
   .form-head-text{
     border: 0;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: var(--bggrey);
-
     color: var(--grey);
     font-family: 'OpenSans', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 19.2px;
-
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: var(--gap32);
-
     width: 100%;
   }
 
+
+  .form-search{
+    width: 24%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: 1px solid var(--bggrey);
+  }
+
+
   .category-select{
-    width: 236px;
-    padding-top: 19px;
+    /*width: 300px;*/
+    padding-top: 15px;
     padding-bottom: 19px;
     padding-right: var(--gap32);
 
@@ -370,13 +376,15 @@ html {
     line-height: normal;
   }
 
-  .search-cat{
+  /*.search-cat{
     display: flex;
     justify-self: flex-end;
-  }
+  }*/
 
   .cat-option{
     display: block;
+    width: 24%;
+
    /* flex-direction: row;*/
   }
 
@@ -384,9 +392,7 @@ html {
     color: var(--ltblack);
   }
 
-  /*.form-search{
-    padding-right: var(--gap32);
-  }*/
+
 
   .hl-basket{
     padding-left: var(--gap32);
@@ -417,9 +423,29 @@ html {
 
   }
 
-  .heading-block{
-    display: block;
+  .arr-block{
+    display: flex;
+    flex-direction: row;
+  }
 
+  .arr{
+    width: 32px;
+    height: 32px;
+    display: block;
+  }
+
+  .arr-fwd{
+    background-image: url(../img/arr-rt.svg);
+  }
+
+  .arr-bwd{
+    background-image: url(../img/ben-arr-lt.svg);
+    margin-right: 13px;
+  }
+  .heading-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .section{

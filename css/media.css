@@ -56,16 +56,16 @@
   .adress{
     max-width: 952px;
     width: 100%;
-
     justify-content: space-between;
     padding-bottom: 18px;
-
-    }
+  }
 
   .company{
     max-width: 952px;
     width: 100%;
   }
+
+
 
   .sp-mid-open{
     visibility: hidden;
@@ -156,7 +156,7 @@
   }
 
   .media{
-    margin-right: 0;
+    margin-right: 89px;
   }
 
   .footer-descr{
@@ -167,6 +167,10 @@
 /*для 768*/
 @media(max-width: 975px) {
 
+  .company{
+    background-color: var(--bggrey);
+
+  }
 
   /*burger-section*/
   .burger {
@@ -384,12 +388,35 @@
     margin-bottom: 16px;
   }
 
-  .head-top{
-    padding: 0;
+  .head-top {
+    padding-top: 16px;
   }
 
   .nav-panel {
     padding: 0;
+  }
+
+  .form-block{
+    flex-direction: column;
+  }
+
+  .form-search {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-radius: 10px;
+  }
+
+  .category-select {
+    width: 85%;
+  }
+
+  .form-head{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .select{
+    margin-bottom: 16px;
   }
 
   .company{
@@ -397,7 +424,10 @@
   }
 
   .container-header-mid {
-    padding-top: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid var(--bggrey);
+    border-top: 1px solid var(--bggrey);
   }
 
 
@@ -410,6 +440,10 @@
   .ban-txt {
     padding-bottom: 125px;
     font-size: 20px;
+  }
+
+  .get {
+    width: 296px;
   }
 
   .spec-card-mid{
